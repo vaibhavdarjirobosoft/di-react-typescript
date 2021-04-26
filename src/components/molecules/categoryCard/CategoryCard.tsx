@@ -1,0 +1,22 @@
+import React from 'react';
+import Image from "components/atoms/image/Image";
+import Text from "components/atoms/text/Text";
+import "./style.css";
+
+
+interface Props {
+    category: {
+        image: string;
+        text: string;
+    }
+};
+const CategoryCard: React.FC<Props> = ({ category: { image, text } }) => (
+    <div className="category-card">
+        <Image className="border-rad-10" location={image} width={202} height={125}/>
+        <div className="category-text-position">
+            <Text content={text} type="category-text" />
+        </div>
+    </div>
+);
+
+export default CategoryCard;
