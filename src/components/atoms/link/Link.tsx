@@ -11,7 +11,7 @@ interface Props {
     rest?: object;
 }
 
-const Link: React.FC<Props> = ({url, text, active, className, onClick, ...rest}) => (
+const Link = ({url, text, active, className, onClick, ...rest}: Props) => (
     <a href={url} className={`link ${className}`} onClick={onClick} {...rest}>
         <Text content={text} type={active}/>
     </a>

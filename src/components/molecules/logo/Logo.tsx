@@ -12,7 +12,7 @@ interface Props {
     }
 }
 
-const Logo: React.FC<Props> = ({ content }) => (
+const Logo = ({ content }: Props) => (
     <div className="logo">
         <Image 
             location={content.list}

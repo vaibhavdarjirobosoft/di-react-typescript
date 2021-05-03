@@ -8,7 +8,7 @@ interface Props extends React.ButtonHTMLAttributes<HTMLButtonElement>  {
     type: "button" | "submit" | "reset" | undefined;
 }
 
-const Button: React.FC<Props> = ({ name, type, variant }) => (
+const Button = ({ name, type, variant }: Props) => (
     <button className={`btn btn-${variant}`} type={type}>
         <Text content={name}/>
     </button>

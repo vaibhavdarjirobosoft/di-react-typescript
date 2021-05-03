@@ -7,7 +7,7 @@ interface Props {
     value?: any;
 }
 
-const Input: React.FC<Props> = ({ className, placeHolder, value }) => (
+const Input = ({ className, placeHolder, value }: Props) => (
     <input 
         className={className}
         placeholder={placeHolder}

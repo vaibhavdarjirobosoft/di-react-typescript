@@ -5,7 +5,7 @@ interface Props {
     content: string[];
 }
 
-const NavLink:React.FC<Props> = ({ content }) => (
+const NavLink = ({ content }: Props) => (
     <div className="nav-links">
         {
             content.map((link, index) => (

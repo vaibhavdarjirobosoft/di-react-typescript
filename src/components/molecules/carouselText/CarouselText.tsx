@@ -13,7 +13,7 @@ interface Props {
     }
 }
 
-const CarouselText: React.FC<Props> = ({ content: { title, subTitle, tag1, tag2 } }) => (
+const CarouselText = ({ content: { title, subTitle, tag1, tag2 } }: Props) => (
     <div className="carousel-text">
         <div>
             <Text content={title} type="carousel-heading"/>

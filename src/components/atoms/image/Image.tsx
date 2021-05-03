@@ -9,7 +9,7 @@ interface Props {
     className?:string;
 }
 
-const Image:React.FC<Props> = ({ location, alt, width=24, height, className }) => (
+const Image = ({ location, alt, width=24, height, className }: Props) => (
     <img
         alt={alt}
         height={height}

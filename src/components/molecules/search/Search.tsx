@@ -9,7 +9,7 @@ interface Props {
     }
 }
 
-const Search: React.FC<Props> = ({ content: { placeHolder, button } }) => (
+const Search = ({ content: { placeHolder, button } }: Props) => (
     <div className="search">
         <Input className="search-input" placeHolder={placeHolder}/>
         <Button name={button} type="submit" />

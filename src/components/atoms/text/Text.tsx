@@ -6,7 +6,7 @@ interface Props {
     type?: string;
 }
 
-const Text: React.FC<Props> = ({ content, type }) => (
+const Text = ({ content, type }: Props) => (
     <p className={`text text-${type}`}>
         { content }
     </p>

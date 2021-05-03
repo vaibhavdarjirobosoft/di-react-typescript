@@ -10,7 +10,7 @@ interface Props {
         text: string;
     }
 };
-const CategoryCard: React.FC<Props> = ({ category: { image, text } }) => (
+const CategoryCard = ({ category: { image, text } }: Props) => (
     <div className="category-card">
         <Image className="border-rad-10" location={image} width={202} height={125}/>
         <div className="category-text-position">
