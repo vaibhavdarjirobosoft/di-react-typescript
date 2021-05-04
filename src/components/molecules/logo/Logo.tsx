@@ -13,6 +13,7 @@ interface Props {
 }
 
 const Logo = ({ content }: Props) => (
+    
     <div className="logo">
         <Image 
             location={content.list}
@@ -20,7 +21,7 @@ const Logo = ({ content }: Props) => (
             className="hamburger"
         />
         <Link 
-            text={<Image location={content.logo} alt={content.logoAlt} width={190}/>} 
+            text={<Image location={content.logo} alt={content.logoAlt} className="app-logo"/>} 
             url="/" 
             active="text-link-active"
         />
